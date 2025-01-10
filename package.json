@@ -3,7 +3,11 @@
   "version": "0.2.0",
   "description": "A sample package.json",
   "dependencies": {
-    "@primer/css": "17.0.1"
+    "@primer/css": "17.0.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "mongoose": "^8.9.4"
   },
   "license": "MIT"
 }
