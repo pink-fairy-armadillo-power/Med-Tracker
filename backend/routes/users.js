@@ -1,7 +1,14 @@
 const express = require('express');
 const router = express.Router();
+const userController = require('../controllers/userController');
 
-//import controllers to use in routers here:
-// const {
+// Register new user
+router.post('/signup', userController.signup);
 
-// }
+// Login user
+router.post('/login', userController.login);
+
+// Get user profile
+router.get('/:userId', userController.getUserProfile);
+
+module.exports = router;
